@@ -10,12 +10,29 @@
     "lint": "stylelint ./src/**/*.css",
     "lintfix": "stylelint ./src/**/*.css --fix",
     "checkAll": "npm run check && npm run lint",
-    "fixAll": "npm run format && npm run lintfix"
+    "fixAll": "npm run format && npm run lintfix",
+    "build": "gulp build",
+    "dev": "gulp"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "browser-sync": "^2.29.3",
+    "browserslist": "^4.21.10",
+    "cssnano": "^6.0.1",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat-css": "^1.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.4.28",
+    "postcss-combine-media-query": "^1.0.1",
     "prettier": "^3.0.2",
     "stylelint": "^15.10.3"
-  }
+  },
+  "browserslist": [
+    "last 5 versions"
+  ]
 }
